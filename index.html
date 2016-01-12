@@ -13,17 +13,29 @@
     </header>
 
     <section class="shop-list">
-        <input type="text" placeholder=" Add new item" class="new-item">
-        <input type="submit" value="+" class="add-item">
+        <form action="new-item">
+            <input type="text" placeholder=" Add new item" class="new-item">
+            <input type="submit" value="+" class="add-item">
+            <!-- <button class="add-item">+</button> -->
+        </form>
         <ul>
             <li class="not-purchased">Eggs
-                <!-- <input type="submit" value="X">    -->
+                <input type="checkbox" class="delete">
             </li>
-            <li class="not-purchased">Bacon</li>
-            <li class="not-purchased">Spinach</li>
-            <li class="purchased">Chicken</li>
-            <li class="purchased">Avocado</li>
+            <li class="not-purchased">Bacon
+                <input type="checkbox" class="delete">
+            </li>
+            <li class="not-purchased">Spinach
+                <input type="checkbox" class="delete">
+            </li>
+            <li class="purchased">Chicken
+                <input type="checkbox" class="delete">
+            </li>
+            <li class="purchased">Avocado
+                <input type="checkbox" class="delete">
+            </li>
         </ul>
+        <button class="delete-selected">Delete Selected</button>
     </section>
 </body>
 
